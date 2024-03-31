@@ -11,8 +11,13 @@ const PhotoDetails = async ({ id, lang }) => {
         <>
             <div className="grid grid-cols-12 gap-4 2xl:gap-10 container mx-auto mt-5">
                 <div className="col-span-12 lg:col-span-8 border rounded-xl">
-                    <Image className="max-w-full h-full max-h-[70vh] mx-auto" src={photo.url} width={900}
-                        height={500} alt={photo.title} />
+                    <Image
+                        className="max-w-full h-full max-h-[70vh] mx-auto"
+                        src={photo.url}
+                        alt={photo.title}
+                        width={900}
+                        height={500}
+                    />
                 </div>
                 <div className="p-6 border rounded-xl col-span-12 lg:col-span-4">
                     <h2 className="text-lg lg:text-2xl font-bold mb-2">
